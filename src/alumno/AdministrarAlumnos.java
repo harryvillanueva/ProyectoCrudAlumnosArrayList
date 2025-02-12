@@ -52,6 +52,7 @@ public class AdministrarAlumnos {
 
         String formato = "| %-15s | %-4s | %-12s | %-15s | %-4s | %-15s | %-4s |\n";
 
+
         output.imprimirLinea();
         output.imprimirCabecera(formato);
         output.imprimirLinea();
