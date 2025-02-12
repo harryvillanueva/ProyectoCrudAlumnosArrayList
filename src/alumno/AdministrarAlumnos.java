@@ -19,6 +19,11 @@ public class AdministrarAlumnos {
 
     }
 
+    public static List<Alumno> getListaAlumnos() {
+        return listaAlumnos;
+    }
+
+
     public static void agregarAlumno(){
         output.mostrarMensajeNombre();
         String nombre = input.getPalabra();
@@ -39,4 +44,28 @@ public class AdministrarAlumnos {
 
 
     }
-}
+
+
+
+
+    public static void listarAlumnos() {
+
+        String formato = "| %-15s | %-4s | %-12s | %-15s | %-4s | %-15s | %-4s |\n";
+
+
+        output.imprimirLinea();
+        output.imprimirCabecera(formato);
+        output.imprimirLinea();
+
+
+        for (Alumno alumno : listaAlumnos) {
+
+            output.imprimirAlumno(formato, alumno.getNombreCompleto(), alumno.getEdad(), alumno.getFechaNac(), alumno.getAsignatura1(), alumno.getNostaAsignatura1(), alumno.getAsignatura2(), alumno.getNotaAsignatura2());
+        }
+
+        output.imprimirLinea();
+    }
+
+
+   }
+

@@ -32,7 +32,7 @@ public class AlumnoApp {
 
         }while (usuarioQuiereSeguir);
 
-        System.out.println("saliste del segundo bucle");
+
     }
 
 
@@ -63,7 +63,7 @@ public class AlumnoApp {
                 agregarAlumno();
             }
             case 2 ->{
-
+                listarAlumnos();
             }
             case 3 ->{
 
@@ -81,4 +81,11 @@ public class AlumnoApp {
 
        alumno.agregarAlumno();
     }
+
+    private static void listarAlumnos(){
+
+        alumno.listarAlumnos();
+    }
+
+
 }
