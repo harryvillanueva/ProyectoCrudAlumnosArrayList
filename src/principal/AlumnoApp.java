@@ -66,7 +66,7 @@ public class AlumnoApp {
                 listarAlumnos();
             }
             case 3 ->{
-
+                actualizarAlumnos();
             }
             case 4 ->{
 
@@ -85,6 +85,11 @@ public class AlumnoApp {
     private static void listarAlumnos(){
 
         alumno.listarAlumnos();
+    }
+
+    private static void actualizarAlumnos(){
+
+        alumno.actualizarAlumnos();
     }
 
 

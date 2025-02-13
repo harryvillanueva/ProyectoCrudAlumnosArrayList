@@ -2,6 +2,7 @@ package alumno;
 
 public class Alumno {
 
+    String dniAlumno;
     String nombreCompleto;
     int edad;
     String fechaNac;
@@ -11,11 +12,13 @@ public class Alumno {
     double notaAsignatura2;
 
 
+
     public Alumno() {
 
     }
 
-    public Alumno(String nombreCompleto, int edad, String fechaNac, String asignatura1,double nostaAsignatura1, String asignatura2,  double notaAsignatura2) {
+    public Alumno(String dniAlumno, String nombreCompleto, int edad, String fechaNac, String asignatura1,double nostaAsignatura1, String asignatura2,  double notaAsignatura2) {
+       this.dniAlumno = dniAlumno;
         this.nombreCompleto = nombreCompleto;
         this.edad = edad;
         this.fechaNac = fechaNac;
@@ -25,6 +28,10 @@ public class Alumno {
          this.notaAsignatura2 = notaAsignatura2;
     }
 
+
+    public String getDniAlumno() {
+        return dniAlumno;
+    }
 
     public String getNombreCompleto() {
         return nombreCompleto;
@@ -52,6 +59,23 @@ public class Alumno {
 
     public double getNotaAsignatura2() {
         return notaAsignatura2;
+    }
+
+
+    public void setAsignatura1(String asignatura1) {
+        this.asignatura1 = asignatura1;
+    }
+
+    public void setAsignatura2(String asignatura2) {
+        this.asignatura2 = asignatura2;
+    }
+
+    public void setNostaAsignatura1(double nostaAsignatura1) {
+        this.nostaAsignatura1 = nostaAsignatura1;
+    }
+
+    public void setNotaAsignatura2(double notaAsignatura2) {
+        this.notaAsignatura2 = notaAsignatura2;
     }
 
     @Override
