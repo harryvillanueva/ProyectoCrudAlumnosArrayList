@@ -176,10 +176,12 @@ public class AdministrarAlumnos {
                 encontrado = true;
             }
         }
+
+
         if (!encontrado){
-            System.out.println("dni no encontrado \n");
+            output.mostrarMensajeDniNoEncontrado();
         }else {
-            System.out.println("Alumno Eliminado \n");
+            output.mostrarMensajeAlumnoEliminado();
         }
 
 
