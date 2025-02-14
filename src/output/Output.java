@@ -91,8 +91,11 @@ public class Output {
     }
 
     public void mostrarMensajeDniNoEncontrado(){
-        System.out.println("Dni no encontrado");
+        System.out.println("Dni no encontrado \n");
     }
 
 
+    public void mostrarMensajeAlumnoEliminado() {
+        System.out.println("Alumno eliminado Satisfactoriamente \n");
+    }
 }
