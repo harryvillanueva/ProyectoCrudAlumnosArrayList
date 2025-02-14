@@ -69,7 +69,7 @@ public class AlumnoApp {
                 actualizarAlumnos();
             }
             case 4 ->{
-
+                eliminarAlumnos();
             }
             case 5 ->{
                 usuarioQuiereSeguir =false;
@@ -90,6 +90,11 @@ public class AlumnoApp {
     private static void actualizarAlumnos(){
 
         alumno.actualizarAlumnos();
+    }
+
+    private static void eliminarAlumnos(){
+
+        alumno.eliminarAlumnos();
     }
 
 
