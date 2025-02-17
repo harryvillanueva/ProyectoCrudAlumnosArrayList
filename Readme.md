@@ -2,7 +2,7 @@
 
 se generaron los las funcionalidades de :
 
-agregar alumno
-listar alumnos
-modificar alumno
+agregar alumno <br>
+listar alumnos<br>
+modificar alumno<br>
 eliminar alumno
